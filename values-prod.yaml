@@ -1,0 +1,12 @@
+# applies to podtato-head-entry deployment only
+ingress:
+  className: nginx
+  annotations:
+    dns.gardener.cloud/class: garden
+    dns.gardener.cloud/dnsnames: kubrix-johnny-be-good-prod.kubrix.stackit.run
+    dns.gardener.cloud/ttl: "180"
+  hosts:
+    - host: kubrix-johnny-be-good-prod.kubrix.stackit.run
+      paths:
+        - path: /
+          pathType: ImplementationSpecific

@@ -1,0 +1,8 @@
+site_name: "johnny-be-good"
+site_description: "Documentation for johnny-be-good"
+
+nav:
+  - Introduction: index.md
+
+plugins:
+  - techdocs-core
